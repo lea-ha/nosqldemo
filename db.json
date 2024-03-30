@@ -1,0 +1,73 @@
+{
+    "SE_student_course": {
+      "Student": [
+        {
+          "StudentID": "JD_CSC","FirstName": "John","LastName": "Doe",
+          "Age": 20,"Major": "Computer Science"
+        },
+        {
+          "StudentID": "AS_CCE","FirstName": "Alice","LastName": "Smith",
+          "Age": 21,"Major": "Computer Engineering"
+        },
+        {
+          "StudentID": "EJ_MTH","FirstName": "Emily","LastName": "Johnson",
+          "Age": 21,"Major": "Mathematics"
+        },
+        {
+          "StudentID": "MB_BIO","FirstName": "Michael","LastName": "Brown",
+          "Age": 18,"Major": "Biochemistry"
+        },
+        {
+          "StudentID": "SW_GRD","FirstName": "Samantha","LastName": "Wilson",
+          "Age": 19,"Major": "Graphic Design"
+        }
+      ],
+      "Course": [
+        {
+          "CourseID": "COE 416",
+          "CourseName": "Software Engineering",
+          "Instructor": "Dr. Ishak"
+        },
+        {
+          "CourseID": "COE 201",
+          "CourseName": "Programming I",
+          "Instructor": "Prof. Johnson"
+        },
+        {
+          "CourseID": "MTH 431",
+          "CourseName": "Linear Algebra",
+          "Instructor": "Dr. Brown"
+        },
+        {
+          "CourseID": "BIO 201",
+          "CourseName": "Intro to Biology",
+          "Instructor": "Dr. Rodriguez"
+        },
+        {
+          "CourseID": "GRD 201",
+          "CourseName": "Type Design",
+          "Instructor": "Dr. Thompson"
+        }
+      ],
+      "student_course": {
+        "COE 416": {
+          "AS_CCE": "Alice",
+          "JD_CSC": "John"
+        },
+        "COE 201": {
+          "AS_CCE": "Alice",
+          "JD_CSC": "John"
+        },
+        "MTH 431": {
+          "EJ_MTH": "Emily"
+        },
+        "BIO 201": {
+          "MB_BIO": "Michael"
+        },
+        "GRD 201": {
+          "SW_GRD": "Samantha"
+        }
+      }
+    }
+  }
+  
