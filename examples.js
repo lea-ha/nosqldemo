@@ -112,22 +112,12 @@ const queryStudentsCountByMajor = async () => {
         console.error("Error querying students count by major: ", error);
     }
 };
-//View all student_course from collection student_course
-const queryStudentsCourses = async () => {
-    try {
-        const querySnapshot = await getDocs(collection(db, "student_course"));
-        querySnapshot.forEach((doc) => {
-            console.log(doc.id, " => ", doc.data());
-        });
-    } catch (error) {
-        console.error("Error querying students courses: ", error);
-    }
-}
 
 
 
-// console.log("1) Querying all students \n");
-// queryAllStudents();
+
+console.log("1) Querying all students \n");
+queryAllStudents();
 // console.log("\n2) Querying students by age > 20 \n");
 // queryStudentsByAge();
 // console.log("\n3) Querying students with limit of 3 \n");
@@ -142,6 +132,4 @@ const queryStudentsCourses = async () => {
 // queryStudentsCount();
 // console.log("\n8) Counting how many students are there by major \n");
 // queryStudentsCountByMajor();
-// console.log("\n9) View registered students in each course \n");
-// queryStudentsCourses();
 
