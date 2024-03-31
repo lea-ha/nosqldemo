@@ -1,5 +1,5 @@
 const { initializeApp } = require("firebase/app");
-const { getFirestore, collection, addDoc, doc, setDoc } = require("firebase/firestore");
+const { getFirestore, collection, addDoc, doc, setDoc, getDocs, query, where, deleteDoc } = require("firebase/firestore");
 const { firebaseConfig } = require("./firebaseConfig");
 
 const app = initializeApp(firebaseConfig);
@@ -40,3 +40,29 @@ const db = getFirestore(app);
 //       console.error("Error adding student: ", error);
 //     });
 //   });
+
+  
+//update student with ID JD_CSC
+// const updateStudent = async () => {
+//     try {
+//         const docRef = doc(db, "students", "JD_CSC");
+//         await setDoc(docRef, { firstName: "John", major: "Computer Science" }, { merge: true });
+//         console.log("Student successfully updated with ID: JD_CSC");
+//     } catch (error) {
+//         console.error("Error updating student: ", error);
+//     }
+// };
+
+// updateStudent();
+
+//delete student with ID SD_ARCH
+// const deleteStudent = async () => {
+//     try {
+//         await deleteDoc(doc(db, "students", "SD_ARCH"));
+//         console.log("Student successfully deleted with ID: SD_ARCH");
+//     } catch (error) {
+//         console.error("Error deleting student: ", error);
+//     }
+// };
+
+// deleteStudent();
